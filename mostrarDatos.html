@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voy a mostrar los datos de las cookies</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //document.getElementById("mostrarNombre").textContent = "Nombre: " + opener.devolver(); //? cuando la funcion solo devolver(), solo devuelve un valor
+
+            // cuando la funcion devolver devuelve mas de un valor 
+
+            var datos = opener.devolver();
+
+            document.getElementById("mostrarNombre").textContent = "nombre: " + datos.nombre; // datos.nombre viene de la funcion devolver nombre: document.getElementById("nombreInput").value, Basicamente es una categoria para saber lo que tiene que devolver en cada parrafo
+            document.getElementById("mostrarApellido").textContent = "apellidos: " + datos.apellidos; // datos.apellidos viene de la funcion devolver,  apellidos: document.getElementById("apellidosInput").value,
+            document.getElementById("mostarDireccion").textContent = "direccion: " + datos.direccion; //datos.direccion viene de la funcion devolver, direccion: document.getElementById("direccionInput").value,
+            document.getElementById("mostrarEmail").textContent = "email: " + datos.email;// datos.email viene de la funcion devolver edad: document.getElementById("edadInput").value,
+            document.getElementById("mostrarEdad").textContent = "edad: " + datos.edad;// datos.edad viene de la funcion devolver email: document.getElementById("email_id").value
+
+
+            //
+
+        });
+    </script>
+
+  
+
+
+
+</head>
+<body>
+    <h1>Voy a mostrar los datos que se ha introducido por los diferentes inputs</h1>
+
+    <p id="mostrarNombre"></p>
+    <p id="mostrarApellido"></p>
+    <p id="mostarDireccion"></p>
+    <p id="mostrarEmail"></p>
+    <p id="mostrarEdad"></p>
+</body>
+</html>
