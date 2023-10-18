@@ -152,7 +152,7 @@ function mostrarCookies() {
 
 function devolver() {
     //return document.getElementById("nombreInput").value; //? Si solo quiero devolver un valor 
-    //todo Devolver todos los valores
+    //todo Devolver todos los valores en la pagina mostrarDatos.html
     return {
         nombre: document.getElementById("nombreInput").value,
         apellidos: document.getElementById("apellidosInput").value,
